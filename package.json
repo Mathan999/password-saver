@@ -8,11 +8,10 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "build": "expo export:web",  
+    "build": "react-scripts build",
     "build:android": "eas build -p android --profile production",
     "build:ios": "eas build -p ios --profile production",
     "build:preview": "eas build -p android --profile preview",
-    "build:web": "expo export:web",
     "preview": "eas build:run",
     "preview:android": "eas build:run -p android"
   },
@@ -41,6 +40,7 @@
     "react-native-tailwindcss": "^1.1.11",
     "react-native-vector-icons": "^10.2.0",
     "react-native-web": "~0.19.13",
+    "react-scripts": "^5.0.1",
     "tailwind-react-native-classnames": "^3.0.1",
     "three": "^0.166.1",
     "twrnc": "^4.6.1"
@@ -49,5 +49,17 @@
     "@babel/core": "^7.20.0",
     "eas-cli": "^16.0.1"
   },
-  "private": true
+  "private": true,
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
